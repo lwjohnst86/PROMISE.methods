@@ -6,6 +6,7 @@
 #'
 #' @param manual The manual to view.
 #' @param view_from Whether to view the manual from a browser or inside RStudio.
+#'
 #' @export
 #'
 view_manual <-
@@ -14,8 +15,8 @@ view_manual <-
         name <- match.arg(manual)
         switch(
             name,
-            introduction = dictionary_manual(view_from),
-            methods = methods_manual(view_from)
+            dictionary = manual('dictionary', view_from),
+            methods = manual('methods', view_from)
         )
     }
 
@@ -26,19 +27,7 @@ list_manuals <- c(
     'dictionary'
 )
 
-#' @rdname view_manual
-#' @export
-view_methods_manual <- function(view_from = c('rstudio', 'browser', 'website')) {
-    manual('methods', view_from)
-}
-
-#' @rdname view_manual
-#' @export
-view_dictionary_manual <- function(view_from = c('rstudio', 'browser', 'website')) {
-    manual('dictionary', view_from)
-}
-
-manual <- function(doc, view.from = c('browser', 'rstudio')) {
+manual <- function(doc, view_from = c('rstudio', 'browser', 'website')) {
     stopifnot(is.character(doc))
     viewing <- match.arg(view_from)
     switch(
