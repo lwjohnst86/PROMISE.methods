@@ -62,7 +62,7 @@ final `PROMISE_data`. The dictionary functions are part of the [PROMISE.methods]
 package.
 
 ```{r dictionary_tables, results='asis'}
-devtools::load_all()
+library(PROMISE.methods)
 options(PROMISE.yaml.path = system.file('rename', package = 'PROMISE'))
 generate_dictionary()
 ```
