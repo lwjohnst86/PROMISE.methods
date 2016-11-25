@@ -24,7 +24,7 @@ create_dictionary_table <- function(filename) {
     dict_data <- yaml::yaml.load_file(dict_file)
     names(dict_data) <- gsub('\\.', '', names(dict_data))
     dict_data <- data.frame(dict_data, stringsAsFactors = FALSE) %>%
-        tidyr::gather(Variable, Value) %>%
+        tidyr::gather('Variable', 'Value') %>%
         tidyr::separate(Variable, into = c('Variable', 'Item'), sep = '\\.') %>%
         dplyr::mutate(Item = factor(Item, levels = unique(Item)),
                Variable = factor(Variable, levels = unique(Variable))) %>%
