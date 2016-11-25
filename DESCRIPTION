@@ -1,9 +1,33 @@
 Package: PROMISE.methods
-Title: What the Package Does (one line, title case)
+Title: PROMISE Method Documentation and Data Dictionary
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.3.1)
-License: MIT
+Authors@R: c(
+    person("Luke", "Johnston", email = "lwjohnst@gmail.com", role = c('aut', 'cre')),
+    person("Ingrid", "Santaren", role = c('ctb')),
+    person("Windy", "Wang", role = c('ctb')),
+    person("Zhila", "Semnani", role = c('ctb')),
+    person("Anthony", "Hanley", email = "anthony.hanley@utoronto.ca", role = c('rth', 'ctb'))
+    )
+Description: Contains the functions and vignettes for the methods used in the
+    data collection for the PROMISE cohort and for the data dictionary for the
+    variables contained within the PROMISE cohort.
+Depends:
+    R (>= 3.3.1)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Suggests:
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+Imports:
+    PROMISE.scrub,
+    knitr,
+    assertive,
+    yaml,
+    tidyr,
+    dplyr,
+    stringi,
+    magrittr
+Remotes: lwjohnst86/PROMISE.scrub
+RoxygenNote: 5.0.1
