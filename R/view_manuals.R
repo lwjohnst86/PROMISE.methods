@@ -32,8 +32,8 @@ manual <- function(doc, view_from = c('rstudio', 'browser', 'website')) {
     viewing <- match.arg(view_from)
     switch(
         viewing,
-        browser = RShowDoc(doc, 'html', 'PROMISE.methods'),
-        rstudio = vignette(doc, package = 'PROMISE.methods'),
+        browser = utils::RShowDoc(doc, 'html', 'PROMISE.methods'),
+        rstudio = utils::vignette(doc, package = 'PROMISE.methods'),
         website = warning("Has not been implemented yet")
     )
 }
