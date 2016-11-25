@@ -7,7 +7,7 @@
 #'
 #' @export
 generate_dictionary <- function() {
-    files <- basename(PROMISE.scrub::multiple_files('\\.yaml$', getOption('PROMISE.rename.path')))
+    files <- basename(PROMISE.scrub::multiple_files('\\.yaml$', getOption('PROMISE.yaml.path')))
     for (fi in files[1:length(files)]) {
         print(suppressWarnings(create_dictionary_table(fi)))
     }
