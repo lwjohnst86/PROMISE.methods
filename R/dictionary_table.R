@@ -14,6 +14,12 @@ generate_dictionary <- function() {
     invisible(NULL)
 }
 
+#' Create a dictionary table from YAML data.
+#'
+#' @param filename YAML filename.
+#'
+#' @return Creates a markdown table.
+#' @export
 create_dictionary_table <- function(filename) {
     dict_file <- dict_yaml_file(filename)
     assertive::assert_all_are_existing_files(dict_file)
