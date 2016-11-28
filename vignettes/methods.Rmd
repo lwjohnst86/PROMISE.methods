@@ -1,0 +1,626 @@
+---
+title: "`PROMISE` Methods"
+author: "Hanley's Lab"
+date: "`r Sys.Date()`"
+output: 
+    rmarkdown::html_vignette:
+        toc: true
+vignette: >
+  %\VignetteIndexEntry{PROMISE Methods}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE)
+library(PROMISE.methods)
+```
+
+##Abstract
+PROspective Metabolism and ISlet cell Evaluation (PROMISE) cohort
+\cite{Hanley2009a, Kayaniyil2010a}. PROMISE is a longitudinal
+observational study of participants with one or more risk factors for
+type 2 diabetes mellitus, including obesity, hypertension, family
+history of diabetes and/or a history of gestational diabetes or birth
+of a macrosomic infant. Participants aged 30 years and older were
+recruited from the general population into the PROMISE cohort during
+the screening phase of the Canadian Normoglycemia Outcomes Evaluation
+study (CANOE: clinical trial registration no. NCT00116922), a
+double-blinded, randomized, controlled trial conducted in Toronto and
+London, Ontario between 2004--2006~[@Zinman2006a]. CANOE was promoted
+locally through newspaper and poster advertisements. Participants not
+eligible to participant in the CANOE trial i.e. because they were not
+classified as having impaired glucose tolerance) were recruited into
+PROMISE (n=736).  Annual telephone contact is maintained with
+participants and follow-up visits occur every three years. At each
+clinic visit, participants undergo extensive metabolic
+characterization, anthropometric measurements, and structured
+questionnaires. Research ethics approval was obtained from
+Mount Sinai Hospital and the University of Western Ontario. Research
+nurses at the respective institutions were centrally trained on the
+standardized procedures for conducting the characterizations.
+
+## Anthropometric measurements and blood pressure ##
+
+Anthropometrics were measured twice and the average was used as the
+final value in the analyses. Height, sitting height (3-yr only),
+weight, as well as waist (WC), iliac crest, and hip circumference were
+measured at all clinic visits using standard procedures. WC was
+measured at the natural waist, identified as the narrowest part of the
+torso between the umbilicus and the xiphoid process. Height was
+measured using a stadiometer, without shoes, and back straight against
+the wall with the head positioned in the Frankfurt plane. Sitting
+height (SH) was measured only at the first follow-up visit
+(2007--2009) and involved the participant sitting on a non-padded
+stool with a fixed height (52.6 cm) in front of a wall mounted
+stadiometer with their back straight against the wall and the head in
+the Frankfurt plane. The stool height was subtracted from height
+while seated to calculate SH and includes the head, neck, and trunk.
+Blood pressure was measured twice on the right arm with the
+participant seated after 5 minutes of resting using an automated
+sphygmomanometer. Weight was measured on a medical balance beam scale
+with shoes off and in light clothing.
+
+## Lifestyle questionnaire ##
+
+Sociodemographic and other potential risk factors were assessed using
+structured standardized questionnaires at each clinic visit.
+Questionnaires collected information on medical history (i.e. presence
+of other chronic diseases such as hypertension, cancer, peripheral
+arterial disease, stroke, myocardial infarction, high cholesterol, or
+kidney or thyroid disease), education, occupation, income, ethnicity,
+sex, age, family history of type 2 diabetes, self-reported weight at
+18 years (in kg), and self-reported birthweight (based on three
+possible responses to the question: <2500 g, 2500--4540 g, >4540 g, as
+well as a "Don't know" option). The education question asked whether
+participants had none, 1--8 yrs, 9--12 yrs of education, or went to
+trade school or college/university (responses were coded from 0--4).
+The question on occupation asked participants whether their
+career/jobs throughout their life consisted mainly of unskilled manual
+labour, skilled manual labour, intermediate (e.g. manager),
+semi-skilled (non-manual), skilled (non-manual), or professional
+(coded from 0--5).
+
+In the lifestyle questionnaire, physical activity was determined using
+a version of the Modifiable Activity Questionnaire (MAQ)
+[@Kriska1990a]. The MAQ collects information on leisure and
+occupational activity, including intensity, frequency, and duration,
+over the past year. Each reported activity from the MAQ was weighted
+by its metabolic intensity allowing for the estimation of MET-hours
+per week. Dietary information was obtained by using the Diet History
+Questionnaire, a validated food frequency questionnaire which assesses
+typical dietary intake over 12 months. Further information on the DHQ
+can be obtained from the website
+<http://appliedresearch.cancer.gov/DHQ/>.
+
+Calculation of the Metabolic Equivalents (MET)
+==============================================
+
+Explain the MAQ calculations here.
+
+Biomarkers and other metabolic characterizations
+================================================
+
+A blood sample was drawn after an 8--12 hr overnight fast at each
+clinic visit to measure nutritional, liver, adipose, inflammatory, and
+kidney biomarkers. Following the fasting blood sample collection, a
+75g oral glucose tolerance test (OGTT) was conducted, with additional
+blood samples being drawn at 30 minutes and 2 hrs post-glucose load.
+All blood samples were processed and frozen at minus 70°C
+for the determination of blood biomarkers.  Blood samples were
+analyzed for alanine transaminase (ALT; a marker of the level of fat
+in the liver), C-reactive protein (CRP; inflammation biomarker),
+cholesterol, high density lipoprotein (HDL), creatinine, and
+triacylglyercides (TAG). CRP was measured by endpoint nephelometry
+using the Dade-Behring BN Prospec and the N high sensitivity CRP
+reagent (Dade-Behring, Mississauga, ON). ALT was
+measured using standard laboratory procedures. 
+
+Serum Creatinine
+----------------
+Serum creatinine was measured using the Roche/Hitachi MODULAR analyzer 
+(measuring range 2.7--2652 μmol/L (0.03--30 mg/dL)). The lower detection 
+limit was 2.7 μmol/L (0.03 mg/dL), which represents the lowest measureable 
+analyte level that can be distinguished from zero. It was calculated as 
+the value lying 3 standard deviations (SD) above that of the lowest 
+standard (standard 1 + 3 SD, intermediate precision, n = 21). Samples with 
+higher concentrations were determined via the rerun function. Dilution of 
+samples via the rerun function was 1:2. Results from samples diluted using 
+the rerun function were automatically multiplied by a factor of 2. 
+
+Choleterol, HDL, TAG
+--------------------
+Cholesterol, HDL, and TAG were measured using Roche Modular's enzymatic 
+colometric tests (Mississauga, ON). Both specific insulin and glucose were 
+derived from the OGTT at fasting, 30 minute and 2 hr time points. Specific
+insulin was measured using the Elecsys 1010 (Roche Diagnostics, Basel,
+Switzerland) immunoassay analyzer and electrochemiluminescence
+immunoassay. This assay shows 0.05% cross-reactivity to intact human
+proinsulin and the Des 31,32 circulating split form.  (Linco
+Res. Inc), which has a CV of 9.3%.  Standard laboratory procedures
+were used to determine glucose. All assays were performed at the
+Banting and Best Diabetes Centre Core Lab at the University of
+Toronto.
+
+Glucose
+-------
+Glucose was determined using an enzymatic hexokinase (Roche Modular,
+Roche Diagnostics) with a detection range of 0.11 (2 mg/dL) to 41.6
+mmol/L.  The inter-assay %CV is <1.1% and the intra-assay %CV is <
+1.9%.
+
+Impaired fasting glucose (IFG), impaired glucose tolerance
+(IGT), and diabetes were categorized using the 2006 WHO criteria
+[@WHO2006a]. Participants were categorized as having IFG if their
+fasting blood glucose was between 6.1--6.9 mmol/L and as having IGT if
+their fasting glucose was < 7.0 mmol/L and their 2 hr OGTT blood
+glucose was < 11.1 but $\ge$ 7.8 mmol/L.  Participants were considered
+to have diabetes if their fasting blood glucose was $\ge$ 7.0 mmol/L
+and/or if their 2 hr glucose was $\ge$ 11.1 mmol/L.
+
+Urine samples
+-------------
+A morning urine sample was also collected. Excreted albumin and
+urinary creatinine were measured from the urine sample using standard
+laboratory procedures; both were used to determine the microalbumin to
+creatinine ratio (MCR) which is a measure of microalbuminuria. Urinary 
+creatinine was measured using the Roach/Hitachi MODULAR P analyzer 
+(measuring range 54--53040 μmol/L (0.6--600 mg/dL)). The lower detection 
+limit of 54 μmol/L (0.6 mg/dL) was calculated as the value lying 3 SD above 
+that of the lowest standard (standard 1 + 3 SD, intermediate precision, 
+n = 10). Samples with higher concentrations were determined via the rerun 
+function. Dilution of samples via the rerun function was 1:2. Results from 
+samples diluted using the rerun function were automatically multiplied by 
+a factor of 2. Estimated glomerular filtration rate (eGFR)---a measure of 
+kidney function---was calculated by the CKD-Epi equation using serum 
+creatinine [@Inker2012]:
+
+If female and serum creatinine $\le$ 0.7 mg/dl:
+`r insert_formula("eGFR_f1")`
+
+If female and serum creatinine > 0.7 mg/dl:
+`r insert_formula("eGFR_f2")`
+
+If male and serum creatinine $\le$ 0.9 mg/dl:
+`r insert_formula("eGFR_m1")`
+
+If male and serum creatinine > 0.9 mg/dl:
+`r insert_formula("eGFR_m2")`
+
+The R package "nephro" was used to calculate eGFR following
+the above formulae [@Pattaro2015].
+
+
+Insulin Sensitivity
+-------------------
+### Homeostatic Model Assessment of Insulin Resistance (HOMA-IR) ###
+HOMA-IR is measure of hepatic insulin resistance.  HOMA-IR was calculated using fasting serum insulin and glucose measures. Insulin sensitivity can be determined by taking the inverse of HOMA-IR.
+
+`r insert_formula("HOMA")`
+
+### HOMA2 ###
+An updated calculation for HOMA-IR (called HOMA2) was introduced by the University of Oxford Diabetes Trials Unit. The [online](https://www.dtu.ox.ac.uk/homacalculator/download.php) excel spreadsheet was used to determine HOMA2-IR based on fasting glucose and insulin measurements. The spreadsheet also calculated the HOMA estimates for beta cell function (%B) and insulin sensitivity (%S). 
+
+### Matsuda Insulin Sensitivity Index ($\text{ISI}_{\text{OGTT}}$)###
+$IS_{OGTT}$ is used as a measure of whole body insulin sensitivity. Fasting and mean levels of insulin and glucose were used to calculate $IS_{OGTT}$.
+
+`r insert_formula("ISI")`
+	  
+	  
+Beta-Cell Dysfunction 
+---------------------
+
+### Insulinogenic index (IGI) divided by HOMA-IR ### 
+IGI/IR is a measure of beta-cell dysfunction based on fasting and 30-minute insulin and glucose levels.
+
+`r insert_formula("IGI_IR")`
+	  
+### Insulin Secretion Sensitivity Index 2 ###
+ISSI-2 is a more recently validated measurement of beta-cell dysfunction. The formula takes into account the area-under-the-curve (AUC) measures of insulin and glucose. 
+
+`r insert_formula("ISI2")`
+
+
+DXA as a measure of regional body composition
+---------------------------------------------
+
+DXA is a method of assessing body tissues using x-ray beams at two
+different energies, which attenuate to varying degrees in different
+tissue types [@Lawlor2002]. In this manner, bone, fat, and lean tissue 
+can be distinguished throughout the body. This method has primarily been
+used clinically and for research purposes to study bone, but is
+increasingly being used as a method to study body composition 
+[@Despres2006; @Prentki2006; @Lawlor2002].
+
+Soft tissue can be measured with good precision with coefficients of
+variation of 2-3% [@Depres2006; @Lawlor2002]. As well as total body 
+fat and lean mass, trunk, arm, and leg fat and lean mass are also easily obtained. Scans are relatively quick at 10-15 minutes (longer if bone measurements are also included).  Although there is ionizing radiation 
+exposure, the dose is very low, equivalent to 1-10% of a chest x-ray 
+for a body composition scan [@Prentki2006]. However, this method does 
+not assess VAT or SAT directly. Computed Tomography (CT) is principally 
+used as the gold standard for regional fat measurements, but involves much higher doses of radiation and raises issues of cost and access. Magnetic Resonance Imaging can also provide more accurate information, but at 
+high costand again with limited access.  As we are setting up a 
+research facility funded by the Canadian Foundation for Innovation 
+and the Ontario Research Fund (PI, J. Knight) at the Prosserman 
+Centre for Health Research, which will have DXA equipment, we 
+will have virtually unlimited access to this machine. Dr. Angela 
+Cheung, co-investigator, has been using DXA in research and 
+clinical practice for more than 15 years (e.g. [@Maedler2002; 
+@Zeender2004; @Mayer-Davis2001; @Wagenknecht2003; @Utzschneider2004]) 
+and oversees the University of Toronto Centre of Excellence in 
+Skeletal Health Assessment (CESHA) which is a multi-site 
+densitometry centre in downtown Toronto. She is intricately familiar
+with the technical aspects of densitometry. Trunk fat measured by
+DXA has been shown to have good correlation (r=0.70) with VAT assessed
+by CT in elderly white women unselected for BMI [@Kharroubi2003], 
+although trunk fat/total fat has a greater differential between 
+correlation with VAT (r=0.44) compared to SAT (r=0.17) in obese 
+South American women [@Bacha2004]. The latter study also found 
+that leg fat was highly correlated with SAT, but had no correlation 
+with VAT. It should therefore be possible to make some distinction 
+between fat depots using DXA.
+
+DXA total body, hip, and spine scan
+-----------------------------------
+
+All DXA scans will be performed on a DXA machine located at the
+Prosserman Centre for Health Research on research dedicated equipment
+obtained through funding from the Canadian Foundation for Innovation
+(J. Knight, PI). Scans of total body, hip and spine will be performed
+on each participant by 1-2 trained and experienced technologists using
+one state-of-the-art densitometer (Hologic Discovery densitometer,
+Hologic, Massachusetts). Standard positioning protocol will be
+utilized. The scans will take approximately 20 to 30 minutes to
+perform. The dose of radiation from all three scans will total
+approximately 0.5 of a chest X-ray. Previous precision studies at CESHA
+showed excellent to good intra- and inter-operator reliability for
+bone density parameters (1-1.8%) and body fat composition (1-3%
+depending on body region). Spine phantom, total body phantom and air
+/ table scans will be performed at regular intervals (daily, weekly
+and monthly respectively) for quality control.
+
+
+Bioelectrical Impedance Analysis
+================================
+
+
+Measurement of Serum Fatty Acids
+================================
+
+Fatty acid measures will be conducted using stored serum samples that
+have been frozen at -80°C for 4-6 years; these samples have not been
+exposed to any freeze-thaw cycles. Previous literature has documented
+that serum fatty acids are stable at these temperatures for up to 10
+years [@Hirsch1976, @Forbes1959]. A known amount of heptadecanoic 
+acid (17:0) will be added to serum, as an internal standard, prior 
+to extracting total lipids according to the method of Folch (117). 
+A portion of the total lipid extract will be added onto thin layer chromatography G-plates (Cat. #10011; Analtech, Newark, DE) which 
+will be developed into heptane/diethyl ether/glacial acetic acid 
+(60:40:2, by vol) to isolate total NEFA. Total NEFA bands will be 
+visualized under UV light after lightly spraying with 8-anilino-1-
+naphthalene sulfonic acid (0.1% wt/vol). Total NEFA bands will be 
+converted to fatty acid methyl esters with 14% boron trifluoride in 
+methanol at 100°C for 1 h. Fatty acid methyl esters will then be 
+separated and quantified using a Varian-430 gas chromatograph (Varian, 
+Lake Forest, CA, USA) equipped with a Varian Factor Four capillary 
+column (VF-23ms; 30 m × 0.25 mm i.d. × 0.25 μm film thickness) and a 
+FID. Samples will be injected in splitless mode. The injector and 
+detector ports will be set at 250°C. Fatty acid methyl esters will be 
+eluted using a temperature program set initially at 50°C for 2 min, 
+increasing at 20°C/min, and held at 170°C for 1 min, then at 3°C/min 
+and held at 212°C for 5 min to complete the run at 28 min. The carrier 
+gas will be helium, set to a constant flow rate of 0.7 mL/min. Peaks 
+will be identified by retention times of authentic fatty acid methyl 
+ester standards (Nu-Chek Prep, Inc., Elysian, MN, USA). Fatty acid concentrations (nmol/ml) will be calculated by proportional comparison 
+of gas chromatography peak areas to that of the heptadecanoic (17:0) 
+internal standard [@DeMar2006; @Bazinet2006; @Bazinet2005; @Chen2011] 
+(See Figure 3 for an example from a PROMISE cohort subject). With 
+this thin layer chromatography method, total serum NEFA, phospholipids, cholesteryl esters and triacylglycerides bands can be obtained. The 
+total NEFA pool will be the focus of the current project. Phospholipids, cholesterol esters and triacylglycerides bands will be collected into 
+a test tube containing known amounts of internal standards and hexane 
+and stored under nitrogen for future studies.
+
+*NOTE*: The fatty acids profiles were compared to reference values to
+ confirm that the values were still good considering they were frozen
+ from 4-6 years.  Richard has information on this.
+
+Detailed procedure
+------------------
+
+This is the fairly precise procedure used when analyzing the fatty
+acids using thin-layer-chromatography with gas-liquid-chromatography
+coupled to flame-ionization detector.
+
+Developed in the Bazinet lab by: Lauren Lin, Chuck Chen, Kayla
+Hildebrand, Maxine Vienneau
+
+### Day 1: ###
+
+1. Add 200 ul of serum into clean 15 ml test tube
+2. Add 1.75 ml of 0.88% KCl (0.88g per 100ml dH2O = distilled water)
+3. Add 2 ml methanol (CH3OH), then 4 ml of chloroform (CHCl3)
+4. Vortex
+5. Centrifuge at 1460 rpm for 10 min
+6. Transfer the bottom layer (chloroform) into new clean tube.
+    - Use long Pasteur pipette for collecting bottom phase, short for
+      collecting top phase
+7. Add 4 ml chloroform into original test tube, vortex, centrifuge
+   again at 1460 rmp for 10 minutes
+8. Transfer bottom layer into new tube with 4 ml of 1st transfer.
+9. Fill it with nitrogen and store in -80 fridge
+10. Score G-plate 20x20cm (1 cm border x 2, 1 cm standard lanes x 3,
+    2.5 cm sample lanes x 6)
+11. Wash plate in tank with 2:1 chloroform: methanol overnight
+    - Clean TLC tank first with chloroform and methanol 
+
+### Day 2: ###
+
+1. Turn on the oven to 100°C
+2. Defrost the sample tubes on diapers
+3. Put TLC plates into steel rack and into the oven for 1 hr (at
+   least)
+4. Dry down samples under gentle steam of nitrogen gas (nitrogen
+   evaporator)
+5. Prepare tank with (mL) 60/40/2, heptane/diethyl ether/acetic acid
+   (G-plate)
+6. Reconstitute samples in 250 ul of chloroform
+7. Vortex, then load samples onto the plates
+8. Put the plate into tank
+9. Run plates for 1 hr or until 2 cm (or 1 cm) from top
+10. Leave the plates in the fumehood for 1 min to dry
+11. Spray with 0.1% of ANSA (0.1g per 100ml dH2O)
+12. Visualize under UV (short wavelength)
+13. Score bands (bottom-up: total PL, chol, FFA, TG, CE) with
+    dissection needle
+14. Collect bands into new 15 ml tubes
+15. Add 200ul 17:0 standard
+16. Add enough hexane to make 2 ml total solution (calculate based on
+    amt. of standard)
+17. Fill with nitrogen and store in -80 fridge (if not moving on to
+    methylation)
+
+### Day 3: ###
+
+1. Defrost your samples
+2. Turn on the oven to 100°C
+3. Add 2 ml of BF3 into samples with hexane
+    - Boron trifluoride is a methyl catalyst --- methylates one of the
+      O’s on the COOH and creates a methyl ester --- makes sample less
+      charged and easier to run
+4. Vortex
+5. Cap the tube TIGHT!
+6. Methylate for 1 hr and check sample every 15 min
+    - Check for bubbling/make sure levels are equal (evaporation) ---
+      probably hexane (top layer)
+7. If a tube leaks, take it out of the oven, cool down for 5 min
+    - Add in hexane or BF3 appropriately (but make sure always have 2
+      ml of hexane)
+    - Change caps then put sample back in the oven
+      (re-time to make 1 hr)
+8. Look out for bubbling tube
+9. Take out tube and cool down
+10. Add 2 ml of dH2O
+    - Water stops reaction --- makes BF3 phase even more hydrophilic
+11. Vortex and centrifuge at 1460 rpm for 10 min
+12. Transfer the TOP layer into a GC vial (labeled). No bubble needed
+    since it’s top
+
+### Day X: ###
+
+1. Dry down the hexane with nitrogen
+2. Reconstitute in 300 ul hexane and vortex
+3. Transfer into insert
+4. Dry down the hexane in the insert and reconstitute in appropriate amount
+   - 100 ul for TG, PL, DAG (and cholesterol)
+   - 60 ul for CE & FFA
+5. Make **sure** there is **no** water in your sample before running
+   the GC
+
+<!-- % DATA CLEANING: two measurements for anthropometrics & BP, averaged. -->
+<!-- % Family history of diabetes was determined whether the father, mother -->
+<!-- % or siblings (# of siblings that have it) had diabetes, from 0-8. Same -->
+<!-- % procedure as other diseases.  Chronic disease of the participant was -->
+<!-- % determined by summing the diseases the subject listed from -->
+<!-- % hypertension to cancer.  SHSmoke was the sum of whether any close -->
+<!-- % family or friends smoked around the subject. -->
+
+<!-- % OGTT - Converted Glu into mg/dl from mmol/l by multiplying by 18 and -->
+<!-- % Ins into micromol/l from pmol/l by dividing by 7.2. The absolute of -->
+<!-- % the glucose and insulin differences in the calculation of IGI were -->
+<!-- % used so there were no negative values. -->
+
+<!-- % Dichotomized: Family history of diseases (either subj has family -->
+<!-- % member with disease or not), Sleep Quality (Very sound, sound, -->
+<!-- % average = 1 and restless, very restless = 0), SHSExposeYr (exposed vs -->
+<!-- % unexposed), SHSPersons (didn't know or did know someone who smokes), -->
+<!-- % LifeEvents (Had a stressful life event or didn't), Premature (those -->
+<!-- % with 9(unknown) assigned as missing values), ChrDis (either have -->
+<!-- % chronic dis or not -->
+
+<!-- % Covariates based on lit, biology, and stepwise reg using Leg in model -->
+<!-- % - paper1: Wgt18, BirthWt, FatherEd, MotherEd, dFHDiab, dFHHyper, -->
+<!-- % dFHMI, dFHCAD, Premature, SHSPersons, Waist, WHR, SBP, DBP, BMI, Butt, -->
+<!-- % Wgt, MedSuppl, ChrDis, OwnEdu, Income, LifeOccup, Tobacco, Alcoh, -->
+<!-- % LifeEvents, (Phys act - need to process the data) Sex, Age, Ethnicity, -->
+<!-- % Chol, HDL, LDL, TAG, -->
+
+<!-- % Covariates based on examination of data - paper1: Wgt18, rFatherEd, -->
+<!-- % rMotherEd, dFHDiab, Waist, BMI, Wgt, Butt (??)  rChrDis, rSES(rOwnEdu, -->
+<!-- % LifeOccup) (Phys act - need to process the data) Sex, Age, Ethnicity, -->
+
+<!-- % Interactions: weight, waist circumference, sex, and ethnicity, -->
+<!-- % parental education (rationale: parental education may be an indication -->
+<!-- % of childhood nutrition). Also, Waist*Ethn(or Edu)*Leg -->
+
+<!-- % Also, removed Income for one sensitivity because of high ``decline'' -->
+<!-- % response (52/652 in Y0, 114/576 in Y3 -- those that declined were -->
+<!-- % significantly shorter in the trunk, and overall height compared to -->
+<!-- % other responses (get information on sex, ethnicity, occup, edu)) -->
+
+<!-- % removed IGT, CABG, and stent from ChrDis variable. Since ChrDis -->
+<!-- % originally included IGT, adjusting for it would likely significantly -->
+<!-- % change the results as it is adjusting for those with problems with -->
+<!-- % glucose, thus accounting for some of the findings of anthropometrics -->
+<!-- % on ir and bcell. Therefore, remove IGT from ChrDis. -->
+
+
+Measurement of Select Proteins
+================================
+
+Subjects with baseline, year 3 and/or year 6 serum collections were selected for protein measures. Serum samples stored in Mount Sinai Hospital at -80°C were pulled and transferred to the Li Ka Shing Knowledge Institute at St. Michael's Hospital where proteins were measured through enzyme-linked immunosorbent assays (ELISA). CD163 was measured through R&D ELISA, while IL-6, TNF-alpha, YKL-40 and adiponectin were measured through MesoScale Discovery (MSD) ELISA. MSD was useful in measuring IL-6 and TNF-alpha on one plate through Multiplex MSD. All serum dilutions, standard curves and prepping of plate were done using JANUS robot. 
+
+Below are the protocol steps for each proteins assessed: 
+
+##Prepping Serum for Measurement
+A total of 1401 samples were measured within 40 days between December 2015 - March 2016. Each day 39-40 samples were measured for 4 ELISA methods. 
+Serum was thawed for 30 minutes at room temperature and mixed through multiple inversions (avoiding bubble formation). 
+
+
+
+
+###CD163
+[Click for PDF of Product Insert](https://resources.rndsystems.com/pdfs/datasheets/dc1630.pdf)
+
+####`Sample and Reagent Preparation`
+
+1. Bring all reagents to room temperature.
+2. Serum and plasma samples require a 10-fold dilution. A suggested 10-fold dilution is 20 μL of sample + 180 μL of Calibrator Diluent RD5-24 (diluted 1:2).
+3. Add 20 mL of Wash Buffer Concentrate to deionized or distilled water to prepare 500 mL of Wash Buffer.
+4. Prepare Calibrator Diluent RD5-24 by adding 20 mL of Calibrator Diluent RD5-24 to 20 mL of deionized or distilled water, making 40 mL of Calibrator Diluent RD5-24 (diluted 1:2).
+5. Reconstitute the Human CD163 Standard with 1.0 mL of deionized or distilled water. 
+6. Prepare highest dilution by mixing 300 μl of human standard and 300 μl of Calibrator Diluent RD5-24.
+
+####`Add Sample`
+
+7. Add 100 μL of Assay Diluent RD1-34 to each well.
+8. Add 50 μL of Standard, control, or sample per well. Cover with the adhesive strip provided. Incubate for 2 hours at room temperature.
+9. Aspirate each well and wash, repeating the process three times for a total of four washes. Wash by filling each well with Wash Buffer (400 μL) using a squirt bottle, manifold dispenser, or autowasher. Complete removal of liquid at each step is essential to good performance. After the last wash, remove any remaining Wash Buffer by aspirating or decanting. Invert the plate and blot it against clean paper towels.
+10. Add 200 μL of Human CD163 Conjugate to each well. Cover with a new adhesive strip. Incubate for 2 hours at room temperature.
+11. Repeat the aspiration/wash as in step 5.
+
+####`Add Substrate Solution and Read`
+
+12. Mix Colour A and Colour B in a dark room to create the Substrate Solution. `This must be used within 15 minutes!`
+13. Add 200 μL of Substrate Solution to each well. Incubate for 30 minutes at room
+temperature. Protect from light.
+14. Add 50 μL of Stop Solution to each well. The color in the wells should change from blue to yellow. If the color in the wells is green or the color change does not appear uniform, gently tap the plate to ensure thorough mixing.
+15. Determine the optical density of each well within 30 minutes, using a microplate reader set to 450 nm. If wavelength correction is available, set to 540 nm or 570 nm. If wavelength correction is not available, subtract readings at 540 nm or 570 nm from the readings at
+450 nm. This subtraction will correct for optical imperfections in the plate. Readings made directly at 450 nm without correction may be higher and less accurate.
+
+
+
+
+### IL-6 and TNF-alpha Multiplex
+[Click for PDF of Product Insert](https://www.mesoscale.com/~/media/files/product%20inserts/proinflammatory%20panel%201%20human%20insert.pdf)
+
+####`Sample and Reagent Preparation`
+
+1. Bring all reagents to room temperature.
+2. Prepare calibration solutions in Diluent 2 using the supplied calibrator.
+3. Reconstitute the lyophilized calibrator blend.
+4. Perform a series of 4-fold dilution steps and prepare a zero calibrator.
+5. Dilute samples and controls 2-fold in Diluent 2 before adding to the plate.
+6. Prepare combined detection antibody solution by diluting each 50X detection antibody 50-fold in Diluent 3. 
+7. Prepare 2X Read Buffer T by diluting 4X Read Buffer T 2-fold with deionized water.
+
+####`Add Sample`
+
+8. Add 50 μL/well of sample (calibrators, controls, or unknowns). Incubate at room temperature with shaking for 2 hours.  
+
+####`Wash and Add Detection Antibody Solution` 
+
+9. Wash plate 3 times with at least 150 μL/well of wash buffer.
+10. Add 25 μL/well of 1X detection antibody solution. 
+11. Incubate at room temperature with shaking for 2 hours.  
+
+####`Wash and Read Plate` 
+
+12. Wash plate 3 times with at least 150 μL/well of wash buffer.
+13. Add 150 μL/well of 2X Read Buffer T. 
+14. Analyze plate on the MSD instrument.
+
+
+
+
+### Adiponectin
+[Click for PDF of Product Insert](https://www.mesoscale.com/~/media/files/product%20inserts/human%20adiponectin.pdf)
+
+#### `Sample and Reagent Preparation`
+
+1. Bring all reagents to room temperature and thaw the Calibrator stock on ice. 
+2. Prepare Blocker A Solution.
+3.  Prepare serum or plasma samples. Samples should be diluted 1000-fold as described in the Reagent Preparation section.
+3. Prepare an 8-point standard curve using supplied Calibrator:
+The Calibrator should be diluted in Diluent 100.
+Dilute the stock Calibrator 1:100 in Diluent 100 then perform a series of 5-fold dilution
+steps and a no Calibrator blank. Diluted Calibrators should be kept on ice until use.
+`Note:` The standard curve can be modified as necessary to meet specific assay requirements.
+4. Prepare Detection Antibody Solution by diluting the 100X Anti-hAdiponectin Antibody to 1X in 3.0 mL of Diluent 12 per plate.
+5. Prepare 20 mL of 1X Read Buffer T by diluting 4X Read Buffer T with deionized water.
+
+####`Add Blocker A Solution`
+
+7. Dispense 150 μL/well Blocker A Solution.
+8. Incubate at room temperature with vigorous shaking (300–1000 rpm) for 1 hour.
+
+####`Wash and Add Sample or Calibrator`
+
+9. Wash plate 3 times with PBS-T.
+10. Dispense 40 μL/well Diluent 12.
+11. Immediately, dispense 10 μL/well Calibrator or Sample.
+    Incubate at room temperature with vigorous shaking (300–1000 rpm) for 2 hours.
+
+####`Wash and Add Detection Antibody Solution`
+
+12. Wash plate 3 times with PBS-T.
+13. Dispense 25 μL/well 1X Detection Antibody Solution.
+14. Incubate at room temperature with vigorous shaking (300–1000 rpm) for 1 hour.
+
+####`Wash and Read Plate`
+
+15. Wash plate 3 times with PBS-T. 
+16. Dispense 150 μL/well 1X Read Buffer T. 
+17. Analyze plate on SECTOR instrument.
+
+
+
+
+### YKL-40
+[Click for PDF of Product Insert](https://www.mesoscale.com/~/media/files/product%20inserts/human%20ykl-40.pdf)
+
+####`Sample and Reagent Preparation`
+
+1. Bring all reagents to room temperature and thaw the calibrator on ice.
+2. Prepare Blocker A solution.
+3. Prepare 7 standard solutions using the supplied calibrator:
+Dilute the stock calibrator 20-fold in Diluent 100.
+Perform a series of 4-fold dilution steps and prepare a zero calibrator blank.
+4. Dilute samples 50-fold in Diluent 100 before adding to the plate.
+5. Prepare detection antibody solution by diluting the stock detection antibody 50-fold in Diluent 3. 
+6. Prepare 2X Read Buffer T by diluting stock 4X Read Buffer T 2-fold with deionized water.
+
+####`Add Blocker A Solution`
+
+7. Add 150 μL/well of Blocker A solution.
+8. Incubate at room temperature with vigorous shaking (300–1000 rpm) for 1 hour.
+
+####`Wash and Add Sample`
+
+9. Wash plate 3 times with 300 μL/well of PBS-T.
+10. Add 50 μL/well of sample (standards, controls, or unknowns).
+11. Incubate at room temperature with vigorous shaking (300–1000 rpm) for 2 hours.
+
+####`Wash and Add Detection Antibody Solution`
+
+12. Wash plate 3 times with 300 μL/well of PBS-T.
+13. Add 25 μL/well of 1X detection antibody solution.
+14. Incubate at room temperature with vigorous shaking (300–1000 rpm) for 2 hours.
+
+####`Wash and Read Plate`
+
+15. Wash plate 3 times with 300 μL/well of PBS-T.
+16. Add 150 μL/well of 2X Read Buffer T.
+17. Analyze plate on SECTOR Imager.
+
+
+# References #
