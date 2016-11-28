@@ -30,10 +30,15 @@ list_manuals <- c(
 manual <- function(doc, view_from = c('rstudio', 'browser', 'website')) {
     stopifnot(is.character(doc))
     viewing <- match.arg(view_from)
+
+    pkg <- 'PROMISE.methods'
+    if (doc == 'dictionary')
+        pkg <- 'PROMISE'
+
     switch(
         viewing,
-        browser = utils::RShowDoc(doc, 'html', 'PROMISE.methods'),
-        rstudio = utils::vignette(doc, package = 'PROMISE.methods'),
+        browser = utils::RShowDoc(doc, 'html', pkg),
+        rstudio = utils::vignette(doc, package = pkg),
         website = warning("Has not been implemented yet")
     )
 }
