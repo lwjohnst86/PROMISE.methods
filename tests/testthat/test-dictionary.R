@@ -60,6 +60,7 @@ test_that("dictionary tables are created", {
         dictionary_entry('wt', 'kg', 'Numeric', 'Weight of individual')
     )
     dictionary_update(entries, dict_name = "test_table.yaml")
+    dictionary_update(entries, dict_name = "test_table2.yaml")
 
     capture.output(expect_is(create_dictionary_table('test_table.yaml'), 'knitr_kable'))
     capture.output(expect_length(create_dictionary_table('test_table.yaml'), 4))
