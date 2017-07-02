@@ -7,10 +7,10 @@
 #' @export
 insert_formula <-
     function(variable = c("eGFR_f1", "eGFR_f2", "eGFR_m1", "eGFR_m2",
-                          "HOMA", "ISI", "IGI_IR", "ISI2")) {
+                          "HOMA", "ISI", "IGIIR", "ISSI2")) {
         variable <- match.arg(variable)
 
-        switch(
+        equation <- switch(
             variable,
             eGFR_f1 = paste(
                 "$$144 \\times (\\text{Scr} / 0.7)^{-0.329} \\times 0.993^{\\text{Age}}[\\times\\text{1.159 if black}]$$"
@@ -30,11 +30,13 @@ insert_formula <-
             ISI = paste(
                 "$$\\text{ISI}_{\\text{OGTT}} = \\frac{10000}{\\sqrt{(\\mathrm{G_{0min}} \\times \\mathrm{I_{0min}}) \\times (\\mathrm{G_{mean}} \\times \\mathrm{I_{mean}} )}}$$"
             ),
-            IGI_IR = paste(
+            IGIIR = paste(
                 "$$\\text{IGI/IR} = \\frac{\\frac{\\mathrm{I_{30min}} - \\mathrm{I_{0min}}}{\\mathrm{G_{30min}} - \\mathrm{G_{0min}}}}{\\text{HOMA-IR}}$$"
             ),
-            ISI2 = paste(
-                "$$\\text{ISI-2} = \\left(\\frac{\\mathrm{Insulin\\: AUC}}{\\mathrm{Glucose\\: AUC}}\\right) \\times \\mathrm{ISI}$$"
+            ISSI2 = paste(
+                "$$\\text{ISSI-2} = \\left(\\frac{\\mathrm{Insulin\\: AUC}}{\\mathrm{Glucose\\: AUC}}\\right) \\times \\mathrm{ISI}$$"
             )
-            )
+        )
+
+        cat(equation)
     }
