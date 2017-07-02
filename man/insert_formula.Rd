@@ -5,7 +5,7 @@
 \title{Insert formula for created variables used in PROMISE.}
 \usage{
 insert_formula(variable = c("eGFR_f1", "eGFR_f2", "eGFR_m1", "eGFR_m2",
-  "HOMA", "ISI", "IGI_IR", "ISI2"))
+  "HOMA", "ISI", "IGIIR", "ISSI2"))
 }
 \arguments{
 \item{variable}{The variable's formula to output.}
@@ -16,4 +16,3 @@ Outputs a string of the LaTeX math equation.
 \description{
 Insert formula for created variables used in PROMISE.
 }
-

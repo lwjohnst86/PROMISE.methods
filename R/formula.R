@@ -38,5 +38,5 @@ insert_formula <-
             )
         )
 
-        cat(equation)
+        return(equation)
     }

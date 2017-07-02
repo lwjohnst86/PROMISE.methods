@@ -213,12 +213,12 @@ Beta-Cell Dysfunction
 ### Insulinogenic index (IGI) divided by HOMA-IR ### 
 IGI/IR is a measure of beta-cell dysfunction based on fasting and 30-minute insulin and glucose levels.
 
-`r insert_formula("IGI_IR")`
+`r insert_formula("IGIIR")`
 	  
 ### Insulin Secretion Sensitivity Index 2 ###
 ISSI-2 is a more recently validated measurement of beta-cell dysfunction. The formula takes into account the area-under-the-curve (AUC) measures of insulin and glucose. 
 
-`r insert_formula("ISI2")`
+`r insert_formula("ISSI2")`
 
 
 DXA as a measure of regional body composition
