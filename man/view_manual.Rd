@@ -2,25 +2,24 @@
 % Please edit documentation in R/view_manuals.R
 \docType{data}
 \name{view_manual}
-\alias{list_manuals}
 \alias{view_manual}
+\alias{list_manuals}
 \title{View the various PROMISE manuals.}
-\format{An object of class \code{character} of length 2.}
+\format{An object of class \code{character} of length 3.}
 \usage{
-view_manual(manual = list_manuals, view_from = c("rstudio", "browser",
-  "website"))
+view_manual(manual = list_manuals, view_from = c("website", "rstudio",
+  "browser"))
 
 list_manuals
 }
 \arguments{
 \item{manual}{The manual to view.}
 
-\item{view_from}{Whether to view the manual from a browser or inside RStudio.}
+\item{view_from}{Whether to view the manual from the PROMISE website, as the
+html vignette in a browser, or as the vignette inside RStudio.}
 }
 \description{
-These manualsthat contain more extended documentation on the data cleaning
-and wrangling processes and on how to add to the dataset whenever new data
-comes in.
+The manuals are the documentations relevant to the PROMISE dataset, such as
+data dictionary, the available datasets, and the methods for PROMISE.
 }
 \keyword{datasets}
-

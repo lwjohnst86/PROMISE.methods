@@ -1,17 +1,17 @@
 # PROMISE.methods
 
 [![Travis-CI Build Status](https://travis-ci.org/lwjohnst86/PROMISE.methods.svg?branch=master)](https://travis-ci.org/lwjohnst86/PROMISE.methods)
+[![Coverage Status](https://img.shields.io/codecov/c/github/lwjohnst86/PROMISE.methods/master.svg)](https://codecov.io/github/lwjohnst86/PROMISE.methods?branch=master)
 
 The goal of PROMISE.methods is to provide functions for creating the data
-dictionary and for keeping the methods documentation for the PROMISE dataset
-(e.g. data collection, etc). This package is more of a companion/assistant to
-the main PROMISE package.
+dictionary and other functions for the dataset and method documentation. This is
+a companion package to the main PROMISE package.
 
 ## Installation
 
 You can install PROMISE.methods from GitHub with:
 
-```R
+```r
 # install.packages("devtools")
 devtools::install_github("lwjohnst86/PROMISE.methods")
 ```
@@ -25,7 +25,7 @@ more details about usage.
 
 You can view the methods or dictionary by running:
 
-```R
+```r
 view_manual('methods')
 view_manual('dictionary')
 ```

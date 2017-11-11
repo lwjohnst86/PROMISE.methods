@@ -13,4 +13,3 @@ Prints all tables related to the dictionary.
 This is used on the PROMISE data dictionary to create the dictionary from the
 rename yaml files.
 }
-
