@@ -7,7 +7,7 @@
 #'
 #' @export
 generate_dictionary <- function() {
-    files <- basename(PROMISE.scrub::multiple_files('\\.yaml$', getOption('PROMISE.yaml.path')))
+    files <- basename(multiple_files('\\.yaml$', getOption('PROMISE.yaml.path')))
     for (fi in files[1:length(files)]) {
         print(suppressWarnings(create_dictionary_table(fi)))
     }
@@ -22,7 +22,7 @@ generate_dictionary <- function() {
 #' @export
 create_dictionary_table <- function(filename) {
     dict_file <- dict_yaml_file(filename)
-    assertive::assert_all_are_existing_files(dict_file)
+    stopifnot(file.exists(dict_file))
 
     name <- gsub('\\.yaml$', '', filename)
     caption <- paste0('Data dictionary for `', name, '` dataset.')
@@ -36,8 +36,19 @@ create_dictionary_table <- function(filename) {
                Variable = factor(Variable, levels = unique(Variable))) %>%
         tidyr::spread(Item, Value)
 
-    names(dict_data) <- stringi::stri_trans_totitle(names(dict_data))
+    names(dict_data) <- string_to_titlecase(names(dict_data))
 
     cat(paste('\n##', name))
     knitr::kable(dict_data, caption = caption)
+}
+
+multiple_files <- function(pattern, path) {
+    list.files(path,
+               pattern = pattern,
+               full.names = TRUE)
+}
+
+string_to_titlecase <- function(x) {
+    word_pattern <- "\\b([[:lower:]])([[:lower:]]+)"
+    gsub(word_pattern, "\\U\\1\\E\\2", x, perl = TRUE)
 }
