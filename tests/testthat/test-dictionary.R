@@ -1,7 +1,8 @@
 context("Data dictionary")
 
 test_that("dictionary reset works", {
-    test_file <- tempfile('test', fileext = '.yaml')
+    path <- getOption("PROMISE.yaml.path")
+    test_file <- tempfile('test', path, fileext = '.yaml')
     file.create(test_file)
     expect_message(dictionary_reset(basename(test_file)))
 })
