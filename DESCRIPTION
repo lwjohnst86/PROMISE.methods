@@ -8,17 +8,17 @@ Authors@R: c(
     person("Zhila", "Semnani", role = c('ctb')),
     person("Anthony", "Hanley", email = "anthony.hanley@utoronto.ca", role = c('rth', 'ctb'))
     )
-Description: Contains the functions and vignettes for the methods used in the
-    data collection for the PROMISE cohort and for the data dictionary for the
-    variables contained within the PROMISE cohort.
+Description: Contains the functions to create and add to the data dictionary for 
+    the PROMISE cohort and to view the documentation.
 Depends:
-    R (>= 3.3.1)
+    R (>= 3.4.2)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests:
     rmarkdown,
-    testthat
+    testthat,
+    covr
 VignetteBuilder: knitr
 Imports:
     PROMISE.scrub,
