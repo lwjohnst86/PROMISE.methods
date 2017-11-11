@@ -19,4 +19,3 @@ removed and added again).}
 \description{
 Adds the entries to the \code{added-variables.yaml} file.
 }
-

@@ -13,4 +13,3 @@ dictionary_reset(filename = "added-variables.yaml")
 Deletes the dictionary yaml file, so that it can be updated again. Really
 should only be used for the \code{added-variables.yaml} dictionary.
 }
-

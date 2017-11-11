@@ -2,3 +2,7 @@
 ^\.Rproj\.user$
 ^\.travis\.yml$
 ^cran-comments\.md$
+^\.gitlab-ci\.yml$
+^_pkgdown\.yml$
+^docs$
+^codecov\.yml$

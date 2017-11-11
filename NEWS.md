@@ -1,3 +1,10 @@
+# PROMISE.methods 0.0.2
+
+* Fixed equation typo (#7).
+* Removed methods vignette into main PROMISE package.
+* `view_manuals` now opens the website to the relevant documentation.
+* Added pkgdown material to create a website.
+
 # PROMISE.methods 0.0.1
 
 * Added a `NEWS.md` file to track changes to the package.
