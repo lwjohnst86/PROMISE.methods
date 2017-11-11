@@ -1,5 +1,5 @@
 Package: PROMISE.methods
-Title: PROMISE Method Documentation and Data Dictionary
+Title: PROMISE Method Documentation and Data Dictionary Helpers
 Version: 0.0.2
 Authors@R: c(
     person("Luke", "Johnston", email = "lwjohnst@gmail.com", role = c('aut', 'cre')),
