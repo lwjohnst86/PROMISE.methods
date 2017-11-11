@@ -19,4 +19,3 @@ dictionary_entry(variable, unit, type = c("Numeric", "Discrete", "Date"),
 \description{
 Can only be added to the data dictionary using \code{\link{dictionary_update}}.
 }
-

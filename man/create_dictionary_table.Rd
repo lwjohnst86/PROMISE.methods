@@ -15,4 +15,3 @@ Creates a markdown table.
 \description{
 Create a dictionary table from YAML data.
 }
-
