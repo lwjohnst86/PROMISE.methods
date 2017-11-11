@@ -4,6 +4,7 @@
 * Removed methods vignette into main PROMISE package.
 * `view_manuals` now opens the website to the relevant documentation.
 * Added pkgdown material to create a website.
+* Reduced package dependencies and added more unit tests.
 
 # PROMISE.methods 0.0.1
 
