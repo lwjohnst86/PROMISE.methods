@@ -33,7 +33,7 @@ manual <- function(doc, view_from = c('website', 'rstudio', 'browser')) {
     stopifnot(is.character(doc))
     viewing <- match.arg(view_from)
 
-    pkg <- 'PROMISE'
+    pkg <- 'PROMISE.data'
 
     switch(
         viewing,
