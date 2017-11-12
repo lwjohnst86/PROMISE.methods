@@ -41,7 +41,7 @@ manual <- function(doc, view_from = c('website', 'rstudio', 'browser')) {
         rstudio = utils::vignette(doc, package = pkg),
         website = {
             main_url <- "https://promise-cohort.gitlab.io/"
-            page <- paste0(main_url, pkg, "/articles/", doc, ".html")
+            page <- paste0(main_url, "PROMISE/articles/", doc, ".html")
             utils::browseURL(page)
         }
     )
